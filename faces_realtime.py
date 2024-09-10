@@ -28,7 +28,7 @@ while True:
         cropped_img = img[y:y+h, x:x+w, :]
         resized_img = cv2.resize(cropped_img, (50,50))
         
-        if len(faces_data) <= 50 and count%10 == 0:
+        if len(faces_data) <= 100 and count%10 == 0:
             faces_data.append(resized_img)
         
         count = count+1
