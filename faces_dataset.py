@@ -31,7 +31,7 @@ def process_images_from_folder(folder_name, label):
             for (x, y, w, h) in faces:
                 cropped_img = img[y:y+h, x:x+w, :]
                 resized_img = cv2.resize(cropped_img, (50, 50))
-                for _ in range(50):
+                for _ in range(100):
                     faces_data.append(resized_img)
                     names.append(label)
 
